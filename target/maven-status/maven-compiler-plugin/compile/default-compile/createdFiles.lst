@@ -1,0 +1,15 @@
+sistema\entity\Productos.class
+sistema\servlets\Login.class
+sistema\servlets\Productos.class
+sistema\modelo\Producto.class
+sistema\modelo\Proveedor.class
+sistema\servlets\Proveedores.class
+sistema\util\HibernateUtil.class
+sistema\entity\Proveedores.class
+sistema\controlador\AccesoDatos.class
+sistema\modelo\Usuario.class
+sistema\funciones\Funciones.class
+sistema\entity\Usuarios.class
+sistema\servlets\PerfilUsuario.class
+sistema\servlets\Usuarios.class
+sistema\controlador\Conexion.class

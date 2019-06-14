@@ -1,0 +1,64 @@
+@charset "utf-8";
+.login {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10%;
+}
+.contenedor {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+table {
+    width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 30px;
+
+    /*text-align: left;*/
+}
+
+tbody {
+    height: 120px;
+    overflow-y: auto;
+}
+
+thead {
+    /* fallback */
+}
+
+
+tbody td{
+    width: 16.5%;
+    float: left;
+}
+
+.fila_producto {
+    width: 16.5%;
+    float: left;
+}
+
+.fila_proveedor {
+    width: 20%;
+    float: left;
+}
+
+.fila_usuario {
+    width: 25%;
+    float: left;
+}
+
+.fila_listado_productos {
+    width: 19.5%;
+    float: left;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20-ene-2017 14:35:34 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sistema.entity.Proveedores" table="proveedores" catalog="sistema" optimistic-lock="version">
+        <id name="idProveedor" type="java.lang.Integer">
+            <column name="id_proveedor" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreEmpresa" type="string">
+            <column name="nombre_empresa" length="100" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="100" />
+        </property>
+        <property name="telefono" type="java.lang.Integer">
+            <column name="telefono" />
+        </property>
+        <property name="fechaRegistroProveedor" type="string">
+            <column name="fecha_registro_proveedor" length="100" />
+        </property>
+        <set name="productoses" table="productos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_proveedor" />
+            </key>
+            <one-to-many class="sistema.entity.Productos" />
+        </set>
+    </class>
+</hibernate-mapping>
